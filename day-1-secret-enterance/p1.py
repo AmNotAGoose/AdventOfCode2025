@@ -1,6 +1,7 @@
+# d1p1: Secret Entrance
 from utils import get_test_data
 
-data = get_test_data("test-data.txt").split("\n")
+data = get_test_data("data.txt").split("\n")
 
 max_pos = 100
 current_pos = 50
