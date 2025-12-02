@@ -24,13 +24,11 @@ for search_range in data:
 
             for cur_index in range(select_len, cur_id_len + 1, select_len):
                 if common_segment != cur_id[prev_index:cur_index]:
-                    # print("bad")
                     all_equal = False
                     break
                 prev_index = cur_index
 
             if all_equal:
-                print(cur_id)
                 invalid_ids.add(int(cur_id))
 
 print(sum(invalid_ids))
